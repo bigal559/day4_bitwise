@@ -1,0 +1,118 @@
+#logo {
+    color:red;
+    display:inline-block;
+}
+#nav {
+    float: right;
+}
+#nav .nav-item {
+    display: inline-block;
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+.content #poker {
+    height: 200px;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+#poker:hover {
+    height: 300px;
+}
+
+.blocks p {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.wrapper {
+
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100vh;
+  padding: 50px;  
+  text-align: left;
+}
+
+p.title{
+  font: 40px 'Roboto', sans-serif;
+  color: rgba(255,255,255,1);
+  margin-bottom: 50px;
+}
+
+.box{
+  width: 300px;
+  height: 460px;
+  position: relative;
+  background: rgba(5,5,1000,1);
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #2c3e50;
+  box-shadow: inset 0 0 0 20px black;
+  -webkit-transition: background 0.4s 0.5s;
+  transition: background 0.2s 0.3s;
+  transition-delay: 0.2s;
+}
+
+.box:hover{
+    background: rgba(255,200,0,0.3);
+    transition-delay: 1s;
+}
+
+.box svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box svg line {
+	stroke-width: 10;
+	stroke: #ecf0f1;
+	fill: none;
+	-webkit-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+
+.box:hover svg line {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.box svg line.top,
+.box svg line.bottom {
+	stroke-dasharray: 330 240; 
+}
+
+.box svg line.left,
+.box svg line.right {
+	stroke-dasharray: 490 400;
+}
+
+.box:hover svg line.top {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+}
+
+.box:hover svg line.bottom {
+	-webkit-transform: translateX(600px);
+	transform: translateX(600px);
+}
+
+.box:hover svg line.left {
+	-webkit-transform: translateY(920px);
+	transform: translateY(920px);
+}
+
+
+.box:hover svg line.right {
+	-webkit-transform: translateY(-920px);
+  transform: translateY(-920px);}
